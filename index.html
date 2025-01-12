@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
   <title>Frontend Mentor | Conference ticket generator</title>
 </head>
 <body>
@@ -33,7 +34,8 @@
       <div id="upload">
         <img src="./assets/images/icon-upload.svg" alt="upload icon">
         <br>
-        <p>Drag and drop or click to upload</p>
+        <input type="file" id="file-input" multiple >
+        <label for="file-input">Drag and drop or click to upload</label>
       </div>
       <div id="mini-div">
         <img src="./assets/images/icon-info.svg" alt="upload icon">
@@ -59,8 +61,6 @@
     <input id="submit-button" type="submit" value="Generate My Ticket" >
   </form>
 
-
-
   <!--
 
   Generated tickets starts
@@ -73,6 +73,7 @@
   Jan 31, 2025 / Austin, TX
 
   Generated tickets ends -->
-  </div>
+  <script src="script.js"></script>
+
 </body>
 </html>

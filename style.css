@@ -128,12 +128,13 @@ form {
     justify-content: space-around;
 }
 
-p {
+p,label {
     font-family: "InconsolataRegular", serif;
 }
 
 #upload {
     border: 1px dashed hsl(0, 0%, 100%, 60%);
+    height: 100px;
     border-radius: 7px;
     display: flex;
     align-items: center;
@@ -147,12 +148,23 @@ p {
         position: relative;
         top: 15px;
     }
-
-    & p {
+    & label {
         color: hsl(0, 0%, 100%, 60%);
         font-size: 15px;
+        position: relative;
+        bottom: 10px;
+        cursor: pointer;
     }
 }
+
+#upload-zone:hover {
+    border-color: #007bff;
+}
+
+#file-input {
+    display: none; /* Cache le champ de fichier */
+}
+
 #mini-div {
     display: flex;
 }
