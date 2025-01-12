@@ -2,17 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Conference ticket generator</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <section id="background">
@@ -33,30 +27,41 @@
     <p id="header-text">Secure your spot at next year's biggest coding conference.</p>
   </header>
 
+  <form>
+    <div id="avatar">
+      <p>Upload Avatar</p>
+      <div id="upload">
+        <img src="./assets/images/icon-upload.svg" alt="upload icon">
+        <br>
+        <p>Drag and drop or click to upload</p>
+      </div>
+      <div id="mini-div">
+        <img src="./assets/images/icon-info.svg" alt="upload icon">
+        <p class="mini-text">Upload your photo (JPG or PNG, max size: 500KB).</p>
+      </div>
+    </div>
+
+    <div id="name">
+      <p>Full Name</p>
+      <input type="text" id="full-name" name="full-name" required>
+    </div>
+
+    <div id="email">
+      <p>Email Address</p>
+      <input type="text" id="email-address" name="email-address" required placeholder="example@email.com">
+    </div>
+
+    <div id="github">
+      <p>GitHub Username</p>
+      <input type="text" id="git-name" name="git-name" required placeholder="@yourusername">
+    </div>
+
+    <input id="submit-button" type="submit" value="Generate My Ticket" >
+  </form>
+
 
 
   <!--
-  Form starts
-
-
-
-
-
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
-
-  Full Name
-
-  Email Address
-  example@email.com
-
-  GitHub Username
-  @yourusername
-
-  Generate My Ticket
-
-  Form ends
 
   Generated tickets starts
 
