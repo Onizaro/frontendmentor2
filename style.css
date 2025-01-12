@@ -42,22 +42,25 @@ body {
     position: absolute;
     left: 3vw;
     top: -8vh;
+    width: 15vw;
 }
 #layer3 {
-    object-fit: contain;
+    object-fit: cover;
     z-index: -10;
     position: absolute;
     width: 100vw;
+    height: 100vh;
 }
 #layer4 {
-    object-fit: fill;
+    object-fit: cover;
     z-index: -5;
     position: absolute;
     bottom: 0;
-    left: 0;
+    height: 42vh;
+
 }
 #layer5 {
-    object-fit: fill;
+    object-fit: cover;
     z-index: -5;
     position: absolute;
     right: 0;
@@ -71,6 +74,7 @@ body {
     position: absolute;
     left: 65vw;
     top: 45vh;
+    width: 15vw;
 }
 
 header {
@@ -80,18 +84,27 @@ header {
     justify-content: space-between;
     align-items: center;
     top: 20px;
-    border: 1px solid red;
     width: 55vw;
     text-align: center;
+    font-family: "InconsolataRegular", serif;
 }
 
 #company-name-logo {
     display: flex;
     justify-content: space-between;
-    border: 1px solid white;
+    font-family: "InconsolataBold", serif;
+}
+h1 {
+    padding-left: 20px;
 }
 
 #slogan {
     font-size: 50px;
-    font-weight: 600 ;
+    font-weight: 600;
+    font-family: "InconsolataExtraBold", serif;
+}
+
+#header-text {
+    position: relative;
+    top: -48px;
 }
