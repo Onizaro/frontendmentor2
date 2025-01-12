@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'InconsolataBold';
+    src: url('assets/fonts/static/Inconsolata-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InconsolataExtraBold';
+    src: url('assets/fonts/static/Inconsolata-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'InconsolataMedium';
+    src: url('assets/fonts/static/Inconsolata-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'InconsolataRegular';
+    src: url('assets/fonts/static/Inconsolata-Regular.ttf') format('truetype');
+}
+
 body {
     margin: 0;
     overflow: hidden;
@@ -63,10 +81,17 @@ header {
     align-items: center;
     top: 20px;
     border: 1px solid red;
+    width: 55vw;
+    text-align: center;
 }
 
 #company-name-logo {
     display: flex;
     justify-content: space-between;
     border: 1px solid white;
+}
+
+#slogan {
+    font-size: 50px;
+    font-weight: 600 ;
 }
